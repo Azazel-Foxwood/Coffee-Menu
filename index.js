@@ -47,6 +47,7 @@ const seasonal = coffeeMenu.filter(isSeasonal);
 console.table(seasonal);
 
 //Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".
+// use the array from previous prompt
 
 const beans = (drinks) => {
     return drinks.name + " with imported beans";
