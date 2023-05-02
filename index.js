@@ -14,3 +14,11 @@ const underFive = (drinks) => {
 };
 const drinksUnderFive = coffeeMenu.filter(underFive);
 console.log(drinksUnderFive);
+
+// Print an array of drinks that are priced at an even number.
+
+const evenDrinks = (drinks) => {
+    return drinks.price % 2 === 0;
+};
+const drinksEven = coffeeMenu.filter(evenDrinks);
+console.log(drinksEven);
