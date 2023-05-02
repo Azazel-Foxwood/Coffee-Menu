@@ -31,3 +31,8 @@ const findAllPrices = (drinks) => {
 const allPrices = coffeeMenu.map(findAllPrices);
 // console.log(allPrices);
 
+const sumCost = (price, currentTotal) => {
+    return price + currentTotal;
+};
+const totalCost = allPrices.reduce(sumCost);
+console.log(totalCost);
