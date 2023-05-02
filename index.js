@@ -36,3 +36,11 @@ const sumCost = (price, currentTotal) => {
 };
 const totalCost = allPrices.reduce(sumCost);
 console.log(totalCost);
+
+// Print an array with all the drinks that are seasonal.
+
+const isSeasonal = (drinks) => {
+    return drinks.seasonal === true;
+};
+const seasonal = coffeeMenu.filter(isSeasonal);
+console.log(seasonal);
