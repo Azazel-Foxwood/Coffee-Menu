@@ -22,3 +22,12 @@ const evenDrinks = (drinks) => {
 };
 const drinksEven = coffeeMenu.filter(evenDrinks);
 console.log(drinksEven);
+
+// Print the total if you were to order one of every drink.
+// have to make an array of all the prices first
+const findAllPrices = (drinks) => {
+    return drinks.price;
+}
+const allPrices = coffeeMenu.map(findAllPrices);
+// console.log(allPrices);
+
